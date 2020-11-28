@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="playBoard3.css">
+<script src="playboard3.js"></script>
+</head>
+
+<body onload="onGameLoad()"></body>
+<div class="container">
+  <div class="toppane">
+    <div class="flex-container-row">
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>18</div>
+    </div>
+  </div>
+  <div class="leftpane">
+    <div class="flex-container-col">
+        <div>8</div>
+        <div>7</div>
+        <div>6</div>
+        <div>5</div>
+      </div>
+  </div>
+  <div class="middlepane" id="middlePane">
+    <div class="dice">
+        <ol class="die-list even-roll" data-roll="1" id="die">
+          <li class="die-item" data-side="1">
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="2">
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="3">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="4">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="5">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="6">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+        </ol>
+      </div>
+      <button type="button" id="roll-button">Roll Dice</button>
+  </div>
+
+  <div class="rightpane">
+    <div class="flex-container-col">
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+      </div>
+  </div>
+  </div>
+
+  <div class="bottompane">
+    <div class="flex-container-row">
+        <div id = "cell_3">3</div>
+        <div id = "cell_2">2</div>
+        <div id = "cell_1">1</div>
+        <div id = "cell_0">0</div>
+    </div>
+  </div>
+</div>
+
+<img class="banker" id = "player" src="banker.jpg" width="100" height="100">
+
+</body>
+</html>
