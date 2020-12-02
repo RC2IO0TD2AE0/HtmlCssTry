@@ -39,3 +39,8 @@ function onKeyPress(event) {
     }
 }
 
+///////////////////////////////////////////
+ var  progressbar = $( "#progressbar" ),
+      progressbarValue = progressbar.find( ".ui-progressbar-value" );
+ progressbar.progressbar( "option", {value: 77 });
+
